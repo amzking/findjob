@@ -7,7 +7,22 @@
   <version>1.0-SNAPSHOT</version>
   <name>demo-findjob Maven Webapp</name>
   <url>http://maven.apache.org</url>
-
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!--Junit版本号-->
+    <junit.version>3.8.1</junit.version>
+    <!--javaee api版本号-->
+    <javax.version>7.0</javax.version>
+    <!--mysql版本号-->
+    <mysql.version>6.0.5</mysql.version>
+    <!-- spring版本号 -->
+    <spring.version>4.2.5.RELEASE</spring.version>
+    <!-- mybatis版本号 -->
+    <mybatis.version>3.4.2</mybatis.version>
+    <!--jasypt 加密工具版本号-->
+    <jasypt.version>1.9.2</jasypt.version>
+  </properties>
 
   <build>
     <finalName>demo-findjob</finalName>
@@ -29,7 +44,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -37,23 +52,37 @@
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
+      <version>${javax.version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>6.0.5</version>
+      <version>${mysql.version}</version>
     </dependency>
 
 
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.2.5.RELEASE</version>
+      <version>${spring.version}</version>
     </dependency>
 
+
+    <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>${mybatis.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.jasypt/jasypt -->
+    <dependency>
+      <groupId>org.jasypt</groupId>
+      <artifactId>jasypt</artifactId>
+      <version>${jasypt.version}</version>
+    </dependency>
 
 
   </dependencies>
