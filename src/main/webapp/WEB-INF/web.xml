@@ -37,5 +37,12 @@
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  
+
+
+  <!--错误页面时跳转-->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/view/error404.jsp</location>
+  </error-page>
+
 </web-app>
